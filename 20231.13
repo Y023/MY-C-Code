@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	int i,j,m=0,n;
+	printf("请输入需要计算的阶乘");
+	scanf("%d",&n);
+	for(i=1,j=1;i<=n;i++) 
+	{
+		j=i*j;
+		m=m+j;
+	}
+	pritnf("阶乘的计算结果为%d",m);
+	return 0;
+}
