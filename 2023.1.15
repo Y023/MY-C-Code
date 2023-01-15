@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char arr1[]="hello world";
+	char arr2[]="###########";
+	int a=strlen(arr1)-1;
+	int zuo=0;
+	int you=a;
+	int b=1;
+	int c=1;
+	while(zuo<=you)
+	{
+		arr2[zuo]=arr1[zuo];
+		arr2[you]=arr1[you];
+		printf("%s\n",arr2);
+		zuo++;
+		you--;
+	}
+	return 0;
+}
